@@ -1,0 +1,99 @@
+// Display
+
+.is-flex {
+  display: flex;
+}
+
+// Width
+
+.is-full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+// Float
+
+.is-clearfix {
+  @include clearfix;
+}
+
+.is-pulled-left {
+  float: left;
+}
+
+.is-pulled-right {
+  float: right;
+}
+
+
+// Text
+
+.has-text-centered {
+  text-align: center;
+}
+
+.has-text-left {
+  text-align: left;
+}
+
+.has-text-right {
+  text-align: right;
+}
+
+
+// Visibility
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-hidden-phone {
+  @include phone {
+    display: none !important;
+  }
+}
+
+.is-hidden-phone-s {
+  @include phone-s {
+    display: none !important;
+  }
+}
+
+.is-hidden-phone-xs {
+  @include phone-xs {
+    display: none !important;
+  }
+}
+
+.is-hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.is-hidden-touch {
+  @include touch {
+    display: none !important;
+  }
+}
+
+.is-hidden-desktop {
+  @include desktop {
+    display: none !important;
+  }
+}
+
+
+// Other
+
+.is-disabled {
+  pointer-events: none;
+}
+
+.is-marginless {
+  margin: 0 !important;
+}
+
+.is-unselectable {
+  @include unselectable;
+}

@@ -1,0 +1,67 @@
+@import "colors";
+
+// Typography
+
+$family-sans-serif: "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-monospace: "Source Code Pro", "Monaco", "Inconsolata", monospace !default;
+
+$family-primary: $family-sans-serif !default;
+$family-code: $family-monospace !default;
+
+$size-1: 2.2em !default;
+$size-2: 2em !default;
+$size-3: 1.8em !default;
+$size-4: 1.6em !default;
+$size-5: 1.4em !default;
+$size-6: 1.2em !default;
+$size-7: 0.9em !default;
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 !default;
+
+$size-small: $size-7 !default;
+$size-normal: 12px !default;
+$size-medium: $size-5 !default;
+$size-large: $size-3 !default;
+$size-huge: $size-1 !default;
+
+$weight-normal: 400 !default;
+$weight-bold: 700 !default;
+$weight-title-normal: 300 !default;
+$weight-title-bold: 500 !default;
+
+
+// Breakpoints
+
+$screen-xs: 340px !default;
+$screen-s: 480px !default;
+$screen-m: 600px !default;
+$screen-l: 768px !default;
+$screen-xl: 960px !default;
+$screen-xxl: 1140px !default;
+
+$screen-max: $screen-xxl !default;
+
+
+// Dimensions
+
+$header-height: 50px !default;
+$footer-height: 40px !default;
+
+$col-gap: 20px !default;
+
+// horizontal gap
+$gap-x: 10px !default;
+$gap-left: $gap-x / 2 !default;
+$gap-right: $gap-left !default;
+
+// vertical gap
+$gap-y: 20px !default;
+$gap-top: $gap-y / 2 !default;
+$gap-bottom: $gap-top !default;
+
+
+// Miscellaneous
+
+$radus-default: 4px !default;
+$easing: ease-out !default;
+$fade-speed: 200ms !default;

@@ -1,0 +1,15 @@
+footer.page-footer {
+  height: $footer-height;
+  background: $white;
+  border-top: 1px solid $grey-light;
+  @include shadow-layout;
+
+  .container {
+    @extend %page-container;
+  }
+}
+
+.footer-item {
+  padding: ($footer-height/2) $gap-right;
+  line-height: 0;
+}

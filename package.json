@@ -1,0 +1,26 @@
+{
+  "name": "flexomatic",
+  "version": "0.0.1",
+  "description": "Modern CSS framework based on Flexbox",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegitfather/flexomatic.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1"
+  },
+  "scripts": {}
+}

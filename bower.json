@@ -1,0 +1,21 @@
+{
+  "name": "flexomatic",
+  "version": "0.0.1",
+  "description": "Modern CSS framework based on Flexbox",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

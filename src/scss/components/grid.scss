@@ -1,0 +1,68 @@
+.columns {
+  display: flex;
+
+  margin-left: -10px;
+  margin-right: -10px;
+
+  // Modifiers
+  &.is-centered {
+    justify-content: center;
+  }
+
+  &.is-vcentered {
+    align-items: center;
+  }
+
+  &.is-gapless {
+    margin: 0;
+    & > .column {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &.is-multiline {
+    flex-wrap: wrap;
+  }
+
+  @include phone {
+    flex-direction: column;
+  }
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+
+  &.is-narrow {
+    flex: none;
+  }
+
+  &.is-full {
+    flex: none;
+    width: 100%;
+  }
+
+  &.is-half {
+    flex: none;
+    width: 50%;
+    @include phone {
+      width: 100%;
+    }
+  }
+
+  @for $i from 1 through 12 {
+    &.is-#{$i} {
+      flex: none;
+      width: $i / 12 * 100%;
+    }
+
+    &.is-offset-#{$i} {
+      margin-left: $i / 12 * 100%;
+    }
+  }
+}
+
+.column > .columns > .column {
+  padding-top: 0;
+}

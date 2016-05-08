@@ -1,0 +1,102 @@
+.title,
+.subtitle {
+  @extend .block;
+
+  font-weight: $weight-title-normal;
+  word-break: break-word;
+
+  em,
+  span {
+    font-weight: $weight-title-normal;
+  }
+
+  a {
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
+
+  strong {
+    font-weight: $weight-title-bold;
+  }
+
+  .tag {
+    vertical-align: bottom;
+  }
+}
+
+.title {
+  color: $text-strong;
+  font-size: $size-large;
+
+  code {
+    display: inline-block;
+    font-size: $size-large;
+  }
+
+  strong {
+    color: inherit;
+  }
+
+  // Colors
+  @each $size in $sizes {
+    $i: index($sizes, $size);
+
+    &.is-#{$i} {
+      font-size: $size;
+
+      code {
+        font-size: nth($sizes, min($i + 1, 6));
+      }
+    }
+  }
+
+  // Modifiers
+  &.is-normal {
+    font-weight: 400;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+.subtitle {
+  color: $text;
+  font-size: $size-medium;
+  line-height: 1.125;
+
+  code {
+    border-radius: $radus-default;
+    display: inline-block;
+    font-size: $size-normal;
+    padding: 2px 3px;
+    vertical-align: top;
+  }
+
+  strong {
+    color: $text-strong;
+  }
+
+  // Colors
+  @each $size in $sizes {
+    $i: index($sizes, $size);
+
+    &.is-#{$i} {
+      font-size: $size;
+
+      code {
+        font-size: nth($sizes, min($i + 1, 6));
+      }
+    }
+  }
+
+  // Modifiers
+  &.is-normal {
+    font-weight: 400;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}
