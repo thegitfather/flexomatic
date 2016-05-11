@@ -47,17 +47,15 @@ $screen-max: $screen-xxl !default;
 $header-height: 50px !default;
 $footer-height: 40px !default;
 
-$col-gap: 20px !default;
-
 // horizontal gap
-$gap-x: 10px !default;
-$gap-left: $gap-x / 2 !default;
-$gap-right: $gap-left !default;
+$gap-left-right: 10px !default;
+$gap-left: $gap-left-right !default;
+$gap-right: $gap-left-right !default;
 
 // vertical gap
-$gap-y: 20px !default;
-$gap-top: $gap-y / 2 !default;
-$gap-bottom: $gap-top !default;
+$gap-top-bottom: 10px !default;
+$gap-top: $gap-top-bottom !default;
+$gap-bottom: $gap-top-bottom !default;
 
 
 // Miscellaneous

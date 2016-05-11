@@ -192,6 +192,13 @@ header.page-header .is-full-width.container, footer.page-footer .is-full-width.c
   max-width: 100%;
 }
 
+.section-box {
+  background-color: #fff;
+  padding: 30px 20px;
+  border: 1px solid #d3d6db;
+  border-radius: 4px;
+}
+
 @-webkit-keyframes spin-around {
   from {
     -webkit-transform: rotate(0deg);
@@ -391,7 +398,7 @@ code {
 
 hr {
   border-top-color: #d3d6db;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 img {
@@ -544,7 +551,7 @@ table th {
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
   display: block;
-  padding: 20px;
+  padding: 10px 10px;
 }
 
 a.box:hover, a.box:focus {
@@ -2352,7 +2359,9 @@ a.box:active {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 .column.is-narrow {
@@ -2511,10 +2520,6 @@ a.box:active {
 
 .column.is-offset-12 {
   margin-left: 100%;
-}
-
-.column > .columns > .column {
-  padding-top: 0;
 }
 
 .menu-nav a {
@@ -2724,11 +2729,11 @@ a.header-item.is-active {
 
 main#main {
   max-width: 1140px;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 80px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 599px) {
@@ -2751,7 +2756,7 @@ footer.page-footer {
 }
 
 .footer-item {
-  padding: 20px 5px;
+  padding: 20px 10px;
   line-height: 0;
 }
 

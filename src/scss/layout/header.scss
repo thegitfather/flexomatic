@@ -21,7 +21,7 @@ header.page-header {
 .header-item {
   display: flex;
   align-items: center;
-  padding: 0 $gap-x;
+  padding: 0 $gap-left-right;
 
   a {
     flex-grow: 1;

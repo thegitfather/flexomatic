@@ -1,8 +1,8 @@
 .columns {
   display: flex;
 
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: $gap-left * (-1);
+  margin-right: $gap-right * (-1);
 
   // Modifiers
   &.is-centered {
@@ -32,7 +32,9 @@
 
 .column {
   flex: 1;
-  padding: 10px;
+  padding-left: $gap-left;
+  padding-right: $gap-right;
+  padding-bottom: $gap-bottom;
 
   &.is-narrow {
     flex: none;
@@ -61,8 +63,4 @@
       margin-left: $i / 12 * 100%;
     }
   }
-}
-
-.column > .columns > .column {
-  padding-top: 0;
 }
