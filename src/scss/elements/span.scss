@@ -1,0 +1,8 @@
+@each $name, $pair in $colors {
+  $color: nth($pair, 1);
+  span {
+    &.is-#{$name} {
+      color: $color;
+    }
+  }
+}

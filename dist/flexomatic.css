@@ -190,6 +190,20 @@ input[type=button] {
   margin-bottom: 10px;
 }
 
+.loader, .button.is-loading:after, .control.is-loading:after {
+  -webkit-animation: spin-around 500ms infinite linear;
+          animation: spin-around 500ms infinite linear;
+  border: 2px solid #d3d6db;
+  border-radius: 100%;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
 header.page-header .container, footer.page-footer .container, .page-container {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -287,125 +301,6 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.25;
-}
-
-a {
-  color: #1fc8db;
-  cursor: pointer;
-  text-decoration: none;
-  transition: color 200ms ease-out;
-}
-
-a:hover {
-  color: #222324;
-}
-
-a.is-white {
-  color: #fff;
-}
-
-a.is-white:hover, a.is-white:focus {
-  color: #e6e6e6;
-}
-
-span.is-white {
-  color: #fff;
-}
-
-a.is-black {
-  color: #111;
-}
-
-a.is-black:hover, a.is-black:focus {
-  color: black;
-}
-
-span.is-black {
-  color: #111;
-}
-
-a.is-light {
-  color: #f5f7fa;
-}
-
-a.is-light:hover, a.is-light:focus {
-  color: #d3dce9;
-}
-
-span.is-light {
-  color: #f5f7fa;
-}
-
-a.is-dark {
-  color: #69707a;
-}
-
-a.is-dark:hover, a.is-dark:focus {
-  color: #51575f;
-}
-
-span.is-dark {
-  color: #69707a;
-}
-
-a.is-primary {
-  color: #1fc8db;
-}
-
-a.is-primary:hover, a.is-primary:focus {
-  color: #199fae;
-}
-
-span.is-primary {
-  color: #1fc8db;
-}
-
-a.is-info {
-  color: #42afe3;
-}
-
-a.is-info:hover, a.is-info:focus {
-  color: #1f99d3;
-}
-
-span.is-info {
-  color: #42afe3;
-}
-
-a.is-success {
-  color: #97cd76;
-}
-
-a.is-success:hover, a.is-success:focus {
-  color: #7bbf51;
-}
-
-span.is-success {
-  color: #97cd76;
-}
-
-a.is-warning {
-  color: #fce473;
-}
-
-a.is-warning:hover, a.is-warning:focus {
-  color: #fbda41;
-}
-
-span.is-warning {
-  color: #fce473;
-}
-
-a.is-danger {
-  color: #ed6c63;
-}
-
-a.is-danger:hover, a.is-danger:focus {
-  color: #e84135;
-}
-
-span.is-danger {
-  color: #ed6c63;
 }
 
 code {
@@ -566,6 +461,126 @@ table th {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+a {
+  color: #1fc8db;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 200ms ease-out;
+}
+
+a:hover, a:focus, a:active {
+  outline: 1px dotted #1fc8db;
+  color: #222324;
+}
+
+a.is-white {
+  color: #fff;
+}
+
+a.is-white:hover, a.is-white:focus {
+  color: #e6e6e6;
+}
+
+a.is-black {
+  color: #111;
+}
+
+a.is-black:hover, a.is-black:focus {
+  color: black;
+}
+
+a.is-light {
+  color: #f5f7fa;
+}
+
+a.is-light:hover, a.is-light:focus {
+  color: #d3dce9;
+}
+
+a.is-dark {
+  color: #69707a;
+}
+
+a.is-dark:hover, a.is-dark:focus {
+  color: #51575f;
+}
+
+a.is-primary {
+  color: #1fc8db;
+}
+
+a.is-primary:hover, a.is-primary:focus {
+  color: #199fae;
+}
+
+a.is-info {
+  color: #42afe3;
+}
+
+a.is-info:hover, a.is-info:focus {
+  color: #1f99d3;
+}
+
+a.is-success {
+  color: #97cd76;
+}
+
+a.is-success:hover, a.is-success:focus {
+  color: #7bbf51;
+}
+
+a.is-warning {
+  color: #fce473;
+}
+
+a.is-warning:hover, a.is-warning:focus {
+  color: #fbda41;
+}
+
+a.is-danger {
+  color: #ed6c63;
+}
+
+a.is-danger:hover, a.is-danger:focus {
+  color: #e84135;
+}
+
+span.is-white {
+  color: #fff;
+}
+
+span.is-black {
+  color: #111;
+}
+
+span.is-light {
+  color: #f5f7fa;
+}
+
+span.is-dark {
+  color: #69707a;
+}
+
+span.is-primary {
+  color: #1fc8db;
+}
+
+span.is-info {
+  color: #42afe3;
+}
+
+span.is-success {
+  color: #97cd76;
+}
+
+span.is-warning {
+  color: #fce473;
+}
+
+span.is-danger {
+  color: #ed6c63;
 }
 
 .box {
@@ -2215,20 +2230,6 @@ a.box:active {
   text-align: center;
   vertical-align: top;
   width: 48px;
-}
-
-.loader, .button.is-loading:after, .control.is-loading:after {
-  -webkit-animation: spin-around 500ms infinite linear;
-          animation: spin-around 500ms infinite linear;
-  border: 2px solid #d3d6db;
-  border-radius: 100%;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  content: "";
-  display: block;
-  height: 16px;
-  position: relative;
-  width: 16px;
 }
 
 .number {

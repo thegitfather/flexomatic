@@ -46,36 +46,6 @@ body {
   line-height: 1.25; // 1.25 * 12 = 16px
 }
 
-// Inline
-a {
-  color: $link;
-  cursor: pointer;
-  text-decoration: none;
-  transition: color $fade-speed $easing;
-
-  &:hover {
-    color: $link-hover;
-  }
-}
-
-@each $name, $pair in $colors {
-  $color: nth($pair, 1);
-  a {
-    &.is-#{$name} {
-      color: $color;
-      &:hover,
-      &:focus {
-        color: darken($color, 10%);
-      }
-    }
-  }
-  span {
-    &.is-#{$name} {
-      color: $color;
-    }
-  }
-}
-
 code {
   background: $code-background;
   color: $code;
