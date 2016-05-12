@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-@import "vars/variables";
+@import "variables/common";
+@import "variables/colors";
 
 @import "util/reset";
 @import "util/mixins";

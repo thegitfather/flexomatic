@@ -83,15 +83,17 @@
   }
 }
 
+.is-hidden-widescreen {
+  @include widescreen {
+    display: none !important;
+  }
+}
+
 
 // Other
 
 .is-disabled {
   pointer-events: none;
-}
-
-.is-marginless {
-  margin: 0 !important;
 }
 
 .is-unselectable {

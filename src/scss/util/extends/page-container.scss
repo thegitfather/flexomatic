@@ -1,0 +1,12 @@
+%page-container, .page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: $screen-max;
+  margin: 0 auto;
+  &.is-full-width {
+    max-width: 100%;
+  }
+}
