@@ -122,6 +122,11 @@ select, input, textarea {
   font: 99% sans-serif;
 }
 
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000 !important;
+}
+
 table {
   font-size: inherit;
   font: 100%;
